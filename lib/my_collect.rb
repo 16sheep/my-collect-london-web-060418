@@ -1,4 +1,4 @@
-def my_collect(collection) # put argument(s) here
+def my_collect(array) # put argument(s) here
   new_array = []
 
     for element in array
