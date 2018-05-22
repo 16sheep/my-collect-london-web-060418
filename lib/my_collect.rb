@@ -1,13 +1,11 @@
 def my_collect(collection) # put argument(s) here
-  if block_given?
-    i = 0
- 
-    while i < collection.length
-      yield(collection[i], block)
-      i = i + 1
+  new_array = []
+
+    for element in array
+      new_array.push yield element
     end
- 
-  end
+
+  new_array
 end
 
 
