@@ -1,12 +1,14 @@
 def my_collect(collection) # put argument(s) here
-  i = 0
-
-  while i < array.length
-    yield(collection[i])
-    i = i + 1
-  end
+  if block_given?
+    i = 0
  
-  array
+    while i < array.length
+      yield(collection[i])
+      i = i + 1
+    end
+ 
+    array
+  end
 end
 
 
