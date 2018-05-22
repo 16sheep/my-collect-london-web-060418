@@ -7,7 +7,7 @@ def my_collect(collection) # put argument(s) here
       i = i + 1
     end
  
-    array
+    collection
   end
 end
 
